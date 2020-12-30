@@ -1,0 +1,27 @@
+.counter {
+  height: 42px;
+  display: flex;
+}
+
+.name {
+  width: 300px;
+}
+
+.mbtn {
+  margin-right: 10px;
+}
+
+.invisible {
+  display: block;
+}
+
+.counter-list {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+}
+
+.reset {
+  width: 213px;
+  margin-left: 300px;
+}
