@@ -1,0 +1,1 @@
+{"status":"done","error":"ModuleNotFoundError","message":"Module not found: Error: Can't resolve './Components/Navbar' in '/home/methmal/Documents/counter-app/frontend/src'","chunks":{"client":[{"name":"client.js","path":"/home/methmal/Documents/counter-app/backend/client/static/client/client.js"}]}}
