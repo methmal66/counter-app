@@ -7,14 +7,14 @@ module.exports = {
     client: "./src/index.js",
   },
   output: {
-    path: path.resolve("./counter_app/client/static/client/"),
+    path: path.resolve("../backend/client/static/client/"),
     filename: "[name].js",
   },
   plugins: [
     new CleanWebpackPlugin(),
     new BundleTracker({
-      path: __dirname,
-      filename: "counter_app/webpack-stats.json",
+      path: __dirname + "/../backend",
+      filename: "webpack-stats.json",
     }),
   ],
   module: {

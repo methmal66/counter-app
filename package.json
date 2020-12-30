@@ -2,6 +2,8 @@
   "name": "counter-app",
   "version": "0.1.0",
   "private": true,
+  "main": "../backend/client/static/client/client.js",
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -17,7 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "webpack --config webpack.config.js --watch --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -35,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "webpack-bundle-tracker": "^0.4.3",
+    "webpack-cli": "^4.3.0"
   }
 }
